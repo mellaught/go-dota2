@@ -23,6 +23,12 @@ func init() {
 				Value:       "../client_generated.go",
 				Destination: &clientOutFile,
 			},
+			cli.StringFlag{
+				Name:        "events-output",
+				Usage:       "events output file",
+				Value:       "../events/generated.go",
+				Destination: &eventsOutFile,
+			},
 		},
 		Action: func(c *cli.Context) error {
 			clientFileBuf := &bytes.Buffer{}

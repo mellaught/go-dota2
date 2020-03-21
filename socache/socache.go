@@ -3,7 +3,7 @@ package socache
 import (
 	"sync"
 
-	gcsdkm "github.com/paralin/go-dota2/protocol"
+	gcsdkm "github.com/mellaught/go-dota2/protocol"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	// gcsm "github.com/paralin/go-dota2/protocol"
