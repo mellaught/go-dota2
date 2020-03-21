@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	commands = append(commands, cli.Command{
+	commands = append(commands, &cli.Command{
 		Name:  "print-type-list",
 		Usage: "prints the protobuf type names",
 		Action: func(c *cli.Context) error {

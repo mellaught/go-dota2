@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	commands = append(commands, cli.Command{
+	commands = append(commands, &cli.Command{
 		Name:  "print-messages",
 		Usage: "prints message IDs and derived information",
 		Action: func(c *cli.Context) error {

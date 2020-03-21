@@ -7,7 +7,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-var commands []cli.Command
+var commands []*cli.Command
 
 // Generates a Go API for the Dota GC automatically with static analysis.
 func main() {
